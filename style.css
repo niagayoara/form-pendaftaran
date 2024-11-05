@@ -1,0 +1,56 @@
+/* Warna pastel pink dan font */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+}
+
+.bg-pink-100 {
+    background-color: #ffe4e1;
+}
+
+.bg-pink-200 {
+    background-color: #fcd5ce;
+}
+
+.bg-pink-400 {
+    background-color: #ffb3b3;
+}
+
+.bg-pink-500 {
+    background-color: #ff9e9e;
+}
+
+.text-pink-600 {
+    color: #ff6f6f;
+}
+
+/* Form styling */
+input, select, button {
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #ff6f6f;
+    box-shadow: 0 0 5px #ff6f6f;
+}
+
+button:hover {
+    background-color: #ff6f6f;
+}
+
+/* Footer and link styling */
+footer a:hover, header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    header, footer {
+        padding: 16px;
+    }
+}

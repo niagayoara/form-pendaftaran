@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Lomba Olahraga</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-100 font-poppins">
+
+    <!-- Header -->
+    <header class="bg-pink-400 text-white p-5 shadow-md">
+        <div class="container mx-auto text-center">
+            <h1 class="text-2xl font-bold">Pendaftaran Lomba Olahraga</h1>
+        </div>
+    </header>
+
+    <!-- Main Form Section -->
+    <main class="container mx-auto p-8">
+        <section class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold text-pink-600 mb-4">Form Pendaftaran</h2>
+            <form action="submit.html" method="post" class="space-y-4">
+                <label for="nama" class="block text-pink-600">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+
+                <label for="email" class="block text-pink-600">Email:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+
+                <label for="kategori" class="block text-pink-600">Kategori Lomba:</label>
+                <select id="kategori" name="kategori" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    <option value="sepak-bola">Sepak Bola</option>
+                    <option value="basket">Basket</option>
+                    <option value="atletik">Atletik</option>
+                </select>
+
+                <!-- New Comment Section -->
+                <label for="komentar" class="block text-pink-600">Komentar atau Catatan Tambahan:</label>
+                <textarea id="komentar" name="komentar" rows="4" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Masukkan komentar atau catatan tambahan di sini..."></textarea>
+
+                <button type="submit" class="bg-pink-500 text-white px-6 py-3 rounded-lg font-bold shadow-md hover:bg-pink-600 transition duration-300">
+                    Daftar
+                </button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
